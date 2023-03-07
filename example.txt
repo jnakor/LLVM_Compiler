@@ -1,0 +1,36 @@
+extern void printi(var val : int) 
+var c, d,b,a, i,j,k ,h:int
+var myArray: array[9] of int 
+function dd (var a: int) :int 
+  begin
+      if a>1 then
+        dd := dd(a-1) + 1
+      else
+        dd := 0
+  end;
+begin
+  c := 0
+  d := 111
+  myArray[0] := 0
+  myArray[1] := 2
+  myArray[2] := 4
+  myArray[3] := 6
+  myArray[4] := 8
+  myArray[5] := 10
+  if d>c then
+  begin
+      a := 1
+      a := a+10
+  end
+  else 
+    a:=456
+  a:= myArray[5] + 10 + a + dd(3)
+  printi(a)
+  printi(myArray[2])
+for i:=1 to 3 do 
+begin
+  printi(a)
+  a := a+i
+end
+printi(myArray[3])
+end.
